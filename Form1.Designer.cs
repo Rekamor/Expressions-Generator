@@ -35,7 +35,8 @@ partial class Form1
         expressionVisualisationButton = new Button();
         expressionsGenerationSettingsButton = new Button();
         primeNumbersInformationButton = new Button();
-        exitButton = new Button();
+        closeButton = new Button();
+        menuButton = new Button();
         SuspendLayout();
         // 
         // label1
@@ -71,18 +72,26 @@ partial class Form1
         primeNumbersInformationButton.UseVisualStyleBackColor = true;
         primeNumbersInformationButton.Click += primeNumbersInformationButton_Click;
         // 
-        // exitButton
+        // closeButton
         // 
-        resources.ApplyResources(exitButton, "exitButton");
-        exitButton.Name = "exitButton";
-        exitButton.UseVisualStyleBackColor = true;
-        exitButton.Click += exitButton_Click;
+        resources.ApplyResources(closeButton, "closeButton");
+        closeButton.Name = "closeButton";
+        closeButton.UseVisualStyleBackColor = true;
+        closeButton.Click += exitButton_Click;
+        // 
+        // menuButton
+        // 
+        resources.ApplyResources(menuButton, "menuButton");
+        menuButton.Name = "menuButton";
+        menuButton.UseVisualStyleBackColor = true;
+        menuButton.Click += menuButton_Click;
         // 
         // Form1
         // 
         AutoScaleMode = AutoScaleMode.None;
         resources.ApplyResources(this, "$this");
-        Controls.Add(exitButton);
+        Controls.Add(menuButton);
+        Controls.Add(closeButton);
         Controls.Add(primeNumbersInformationButton);
         Controls.Add(expressionsGenerationSettingsButton);
         Controls.Add(expressionVisualisationButton);
@@ -101,5 +110,6 @@ partial class Form1
     private Button expressionVisualisationButton;
     private Button expressionsGenerationSettingsButton;
     private Button primeNumbersInformationButton;
-    private Button exitButton;
+    private Button closeButton;
+    private Button menuButton;
 }
